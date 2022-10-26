@@ -25,7 +25,7 @@ public class TankController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             GameObject b = Instantiate(bulletToFire, firePoint.position, firePoint.rotation);
-            b.GetComponent<Rigidbody>().AddForce(barrelRotator.up * 10, ForceMode.Impulse);
+            b.GetComponent<Rigidbody2D>().AddForce(barrelRotator.up * 10, ForceMode2D.Impulse);
         }
     }
 }

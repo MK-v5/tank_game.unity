@@ -29,8 +29,7 @@ public class Player : MonoBehaviour
     }
     public void SetActive(bool b)
     {
-        // ?????
-        // ?????
+
         if (b == true)
         {
             OnTurn = true;
