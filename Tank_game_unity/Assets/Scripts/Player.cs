@@ -45,13 +45,13 @@ public class Player : MonoBehaviour
     {
         if (b == true)
         {
-            GetComponent<MeshRenderer>().material = activeMat;
+            GetComponent<SpriteRenderer>().material = activeMat;
             Invoke("SetTrue", 0.2f);
         }
         else
         {
             OnTurn = false;
-            GetComponent<MeshRenderer>().material = inactiveMat;
+            GetComponent<SpriteRenderer>().material = inactiveMat;
         }
     }
     void SetTrue()

@@ -30,14 +30,14 @@ public class TurnEngine : MonoBehaviour
         if (playerTurn == 1)
         {
             playerTurn = 2;
-            Player1.GetComponent<Player>().setTurn(false);
-            Player2.GetComponent<Player>().setTurn(true);
+            Player1.GetComponent<Player>().setTurn(true);
+            Player2.GetComponent<Player>().setTurn(false);
         }
         if (playerTurn == 2)
         {
             playerTurn = 1;
-            Player1.GetComponent<Player>().setTurn(true);
-            Player2.GetComponent<Player>().setTurn(false);
+            Player1.GetComponent<Player>().setTurn(false);
+            Player2.GetComponent<Player>().setTurn(true);
         }
     }
 }
